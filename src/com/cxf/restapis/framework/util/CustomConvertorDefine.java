@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.cxf.restapis.framework.json.impl.ICustomConvertor;
+import com.cxf.restapis.resource.dog.DogModelCustomConvertor;
 
 
 
@@ -33,6 +34,11 @@ import com.cxf.restapis.framework.json.impl.ICustomConvertor;
 public class CustomConvertorDefine
 {
 	private static List<ICustomConvertor> customConvertors = new ArrayList<ICustomConvertor>();
+	
+	static{
+		
+		customConvertors.add(new DogModelCustomConvertor());
+	}
 	
 	private static Map<Object, Object> customMap = new HashMap<Object, Object>();
 	static

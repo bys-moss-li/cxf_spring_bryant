@@ -141,6 +141,11 @@ public class JavaComplier
 					file.mkdir();
 					return;
 				}
+				if (!parentPath.exists())
+				{
+					file.mkdirs();
+					return;
+				}
 				createPath(tempFilePath);
 			}
 		}
