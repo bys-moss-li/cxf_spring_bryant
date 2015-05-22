@@ -43,7 +43,7 @@ public class CustomToJsonGenerator
 	private static String DEFAULT_IMPORT = "import java.io.IOException;\r\n"
 			+ "import com.fasterxml.jackson.core.JsonGenerator;\r\n"
 			//+ "import com.fasterxml.jackson.core.JsonProcessingException;\r\n"
-			+ "import com.accela.json.impl.CustomJSONConvertor;\r\n"
+			+ "import com.cxf.restapis.framework.json.impl.CustomJSONConvertor;\r\n"
 			+ "import java.util.Set;\r\n";
 	
 	private static String TWO_TAB = 	"		";
